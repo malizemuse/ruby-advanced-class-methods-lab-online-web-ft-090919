@@ -48,7 +48,7 @@ class Song
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end
   
-  # 
+  # Sorts all objs in @@ by alphabetical order
   def self.alphabetical
     @@all.sort_by! { |song| song.name }
   end
