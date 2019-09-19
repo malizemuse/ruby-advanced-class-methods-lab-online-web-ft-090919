@@ -1,5 +1,6 @@
 class Song
   
+  
   @@all = []
   
   # Creates getters and setters for song name and artist name 
