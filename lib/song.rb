@@ -75,23 +75,3 @@ class Song
   end
 end
 
-
-# TEST CODE 
-
-song = Song.create
-Song.all.include?(song)
-
-song = Song.new_by_name("Mmmbop")
-song.name
-
-song = Song.create_by_name("Mmmbop")
-song
-Song.all.include?(song)
-
-mmmbop = Song.create_by_name("Mmmbop")
-
-song = Song.new_from_filename("Kanye West - Workout Plan.mp3")
-song.name
-song.artist_name
-
-Song.destroy_all
