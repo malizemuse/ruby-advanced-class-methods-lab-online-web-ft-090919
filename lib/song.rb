@@ -53,14 +53,15 @@ class Song
     @@all.sort_by! { |song| song.name }
   end
   
-  # 
+  # Creates new song; Sets song name / artist name from file format; Returns new obj
   def self.new_from_filename(file_name)
     new_song = self.new
     new_song.name = file_name.split(" - ")[1].split(".")[0]
     new_song.artist_name = file_name.split(" - ")[0]
     new_song
   end
-
+  
+  
   def self.create_from_filename(file_name)
     new_song = self.new
     new_song.name = file_name.split(" - ")[1].split(".")[0]
