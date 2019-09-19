@@ -1,15 +1,17 @@
 class Song
   
-  
+  # class var array @@all
   @@all = []
   
   # Creates getters and setters for song name and artist name 
   attr_accessor :name, :artist_name
-
+  
+  # Returns class array @@all
   def self.all
     @@all
   end
-
+  
+  # Pushes obj self to @@all
   def save
     self.class.all << self
   end
