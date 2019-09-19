@@ -43,7 +43,7 @@ class Song
     self.all.detect { |song| song.name == song_name}
   end
   
-  # 
+  # If song exists, then return obj w/ that song name, else create new obj w/ that song name
   def self.find_or_create_by_name(song_name)
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end
